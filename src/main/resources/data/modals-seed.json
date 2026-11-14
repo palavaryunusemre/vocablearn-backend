@@ -1,0 +1,552 @@
+[
+  {
+    "order": 1,
+    "title": "ABILITY (Yetenek)",
+    "usageNote": "COULD geçmişte GENEL bir yeteneği anlatır; WAS/WERE ABLE TO ve MANAGED TO ise uzun uğraşlar sonucu özel bir işi başarmayı anlatır.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "can",
+        "meaning": "yapabilir (şimdiki yetenek)",
+        "exampleSentence": "Modern computers can process vast amounts of data in seconds."
+      },
+      {
+        "order": 2,
+        "term": "be able to",
+        "meaning": "yapabilir (şimdiki yetenek)",
+        "exampleSentence": "She is able to speak three languages fluently."
+      },
+      {
+        "order": 3,
+        "term": "could",
+        "meaning": "yapabilirdi (geçmişte genel yetenek)",
+        "exampleSentence": "When I was a child, I could climb trees without any fear."
+      },
+      {
+        "order": 4,
+        "term": "was/were able to",
+        "meaning": "başarabildi (özel bir çabayla)",
+        "exampleSentence": "Despite the storm, we were able to finish building the shelter before nightfall."
+      },
+      {
+        "order": 5,
+        "term": "managed to",
+        "meaning": "başarmayı başardı (özel bir çabayla)",
+        "exampleSentence": "Despite the technical difficulties, engineers managed to launch the satellite successfully."
+      },
+      {
+        "order": 6,
+        "term": "will be able to",
+        "meaning": "yapabilecek (gelecek yetenek)",
+        "exampleSentence": "With advanced technology, historians will be able to uncover more ancient mysteries."
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "title": "POSSIBILITY (Olasılık)",
+    "usageNote": "Şimdiki/gelecek olasılık bildirir. COULD burada hem geçmiş yeteneği hem şimdiki olasılığı anlatabilir.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "may",
+        "meaning": "-ebilir (olasılık)",
+        "exampleSentence": "The sudden collapse of the Maya civilization may indicate severe environmental pressures."
+      },
+      {
+        "order": 2,
+        "term": "might",
+        "meaning": "-ebilir (daha düşük olasılık)",
+        "exampleSentence": "Strange bioluminescent creatures discovered in the deepest ocean layers might represent unknown species."
+      },
+      {
+        "order": 3,
+        "term": "could",
+        "meaning": "-ebilir (olasılık)",
+        "exampleSentence": "Ancient inscriptions discovered on remote cave walls could belong to an unknown language."
+      },
+      {
+        "order": 4,
+        "term": "be likely to",
+        "meaning": "muhtemelen -ecek",
+        "exampleSentence": "Given his extensive experience and impressive portfolio, he is likely to secure the job offer."
+      },
+      {
+        "order": 5,
+        "term": "be less likely to",
+        "meaning": "muhtemelen -meyecek",
+        "exampleSentence": "Historians now find it less likely to uncover new evidence about ancient civilizations."
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "title": "ADVICE (Tavsiye)",
+    "usageNote": "SHOULD/OUGHT TO tavsiye verir; HAD BETTER alttan alta tehdit içerir; MUST güçlü bir tavsiyedir.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "should",
+        "meaning": "-meli (tavsiye)",
+        "exampleSentence": "Scientists should wear gloves when handling chemicals in a lab."
+      },
+      {
+        "order": 2,
+        "term": "ought to",
+        "meaning": "-meli (tavsiye)",
+        "exampleSentence": "To improve mental health, people ought to talk openly about their feelings."
+      },
+      {
+        "order": 3,
+        "term": "had better",
+        "meaning": "yapsan iyi olur (tehdit içerir)",
+        "exampleSentence": "You had better check the weather before you leave, as it looks like it might rain."
+      },
+      {
+        "order": 4,
+        "term": "must",
+        "meaning": "-meli (güçlü tavsiye)",
+        "exampleSentence": "You must take regular breaks while studying to avoid burnout."
+      }
+    ]
+  },
+  {
+    "order": 4,
+    "title": "OBLIGATION (Zorunluluk)",
+    "usageNote": null,
+    "entries": [
+      {
+        "order": 1,
+        "term": "must",
+        "meaning": "-meli, zorunda",
+        "exampleSentence": "Employees must wear safety helmets on the construction site."
+      },
+      {
+        "order": 2,
+        "term": "have to",
+        "meaning": "zorunda",
+        "exampleSentence": "To maintain your driver's license, you have to renew it every five years."
+      },
+      {
+        "order": 3,
+        "term": "have got to",
+        "meaning": "zorunda",
+        "exampleSentence": "If you want to grab the themes in the novel, you have got to read the introduction carefully."
+      },
+      {
+        "order": 4,
+        "term": "need to",
+        "meaning": "gerekiyor, zorunda",
+        "exampleSentence": "Developed nations need to prioritize renewable energy sources."
+      }
+    ]
+  },
+  {
+    "order": 5,
+    "title": "LACK OF OBLIGATION (Zorunluluk Yokluğu)",
+    "usageNote": null,
+    "entries": [
+      {
+        "order": 1,
+        "term": "don't have to",
+        "meaning": "zorunda değil",
+        "exampleSentence": "While studying the history of ancient Rome, you don't have to read every single document."
+      },
+      {
+        "order": 2,
+        "term": "doesn't need to",
+        "meaning": "gerek yok",
+        "exampleSentence": "He doesn't need to bring his own tools for the workshop."
+      },
+      {
+        "order": 3,
+        "term": "needn't",
+        "meaning": "gerek yok",
+        "exampleSentence": "Individuals with mild anxiety needn't necessarily seek professional help."
+      },
+      {
+        "order": 4,
+        "term": "didn't have to",
+        "meaning": "zorunda kalmadı (geçmiş)",
+        "exampleSentence": "Thanks to the invention of the printing press, scholars didn't have to hand-copy manuscripts anymore."
+      },
+      {
+        "order": 5,
+        "term": "didn't need to",
+        "meaning": "gerek kalmadı (geçmiş)",
+        "exampleSentence": "Since we finished the project early, we didn't need to stay late at the office."
+      }
+    ]
+  },
+  {
+    "order": 6,
+    "title": "PROHIBITION (Yasaklama)",
+    "usageNote": null,
+    "entries": [
+      {
+        "order": 1,
+        "term": "can't",
+        "meaning": "yapamaz (yasak)",
+        "exampleSentence": "You can't use your phone during the exam; it's against the rules."
+      },
+      {
+        "order": 2,
+        "term": "mustn't",
+        "meaning": "yapmamalı (yasak)",
+        "exampleSentence": "Visitors mustn't touch the exhibits in the museum."
+      },
+      {
+        "order": 3,
+        "term": "be not allowed to",
+        "meaning": "izin yok",
+        "exampleSentence": "Employees are not allowed to access the restricted areas of the building."
+      }
+    ]
+  },
+  {
+    "order": 7,
+    "title": "DEDUCTION (Şimdiki Zaman Çıkarımı)",
+    "usageNote": null,
+    "entries": [
+      {
+        "order": 1,
+        "term": "must be",
+        "meaning": "olmalı (olumlu çıkarım)",
+        "exampleSentence": "Given the amount of experience he has, he must be one of the top experts in his field."
+      },
+      {
+        "order": 2,
+        "term": "can't be",
+        "meaning": "olamaz (olumsuz çıkarım)",
+        "exampleSentence": "They can't be at home; all the lights are off and the curtains are closed."
+      },
+      {
+        "order": 3,
+        "term": "mustn't be",
+        "meaning": "olmamalı (olumsuz çıkarım)",
+        "exampleSentence": "Since the door is locked, the workers mustn't be at the office yet."
+      }
+    ]
+  },
+  {
+    "order": 8,
+    "title": "REQUEST (Rica)",
+    "usageNote": null,
+    "entries": [
+      {
+        "order": 1,
+        "term": "can",
+        "meaning": "...-ir misin (rica)",
+        "exampleSentence": "Can you please pass me the salt?"
+      },
+      {
+        "order": 2,
+        "term": "could",
+        "meaning": "...-ir misiniz (daha kibar rica)",
+        "exampleSentence": "Could you help me with this report when you have a moment?"
+      },
+      {
+        "order": 3,
+        "term": "will",
+        "meaning": "...-ir misin (rica)",
+        "exampleSentence": "Will you please turn down the music? It's a bit too loud."
+      },
+      {
+        "order": 4,
+        "term": "would",
+        "meaning": "...-ir misiniz (rica)",
+        "exampleSentence": "Would you help me understand this topic better?"
+      },
+      {
+        "order": 5,
+        "term": "would you mind",
+        "meaning": "sakıncası var mı (çok kibar rica)",
+        "exampleSentence": "Would you mind opening the door, please?"
+      }
+    ]
+  },
+  {
+    "order": 9,
+    "title": "PERMISSION (İzin)",
+    "usageNote": null,
+    "entries": [
+      {
+        "order": 1,
+        "term": "may",
+        "meaning": "izin istemek (resmi)",
+        "exampleSentence": "May I leave the office early today to attend a family event?"
+      },
+      {
+        "order": 2,
+        "term": "might",
+        "meaning": "izin istemek (nadir, çok resmi)",
+        "exampleSentence": "Might I take a break now? I'm tired of studying."
+      },
+      {
+        "order": 3,
+        "term": "can",
+        "meaning": "izin istemek",
+        "exampleSentence": "Can I use your laptop for the presentation if you need it?"
+      },
+      {
+        "order": 4,
+        "term": "could",
+        "meaning": "izin istemek (kibar)",
+        "exampleSentence": "Could I possibly use your phone for a quick call?"
+      }
+    ]
+  },
+  {
+    "order": 10,
+    "title": "EXPECTATION (Beklenti)",
+    "usageNote": "BE SUPPOSED TO/BE TO üç şekilde çevrilebilir: başlaması bekleniyor / başlayacak / başlaması gerekiyor.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "be supposed to",
+        "meaning": "-ması bekleniyor",
+        "exampleSentence": "The event is supposed to start at 7 PM, so we should be there a bit earlier."
+      },
+      {
+        "order": 2,
+        "term": "be to",
+        "meaning": "-ması bekleniyor/gerekiyor",
+        "exampleSentence": "In many cultures, teenagers are to demonstrate respect for their elders."
+      },
+      {
+        "order": 3,
+        "term": "be due to",
+        "meaning": "-mesi planlanıyor",
+        "exampleSentence": "The new policy is due to take effect next week."
+      }
+    ]
+  },
+  {
+    "order": 11,
+    "title": "HABITUAL ACTIVITIES (Geçmiş Alışkanlık)",
+    "usageNote": "USED TO hem hareket hem durum bildiren fiillerle kullanılır; WOULD sadece hareket bildiren fiillerle kullanılır.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "used to",
+        "meaning": "eskiden yapardı",
+        "exampleSentence": "Before the internet became so widespread, people used to rely on libraries and bookstores."
+      },
+      {
+        "order": 2,
+        "term": "would",
+        "meaning": "eskiden yapardı (sadece hareket fiilleri)",
+        "exampleSentence": "In old Arctic villages, people would gather at night to tell mystical stories."
+      },
+      {
+        "order": 3,
+        "term": "didn't use to",
+        "meaning": "eskiden yapmazdı",
+        "exampleSentence": "He didn't use to travel for work frequently, but now his job requires it every month."
+      }
+    ]
+  },
+  {
+    "order": 12,
+    "title": "BE/GET USED TO (Alışkanlık Olma)",
+    "usageNote": "BE USED TO zaten alışkın olmayı, GET USED TO ise alışma sürecini anlatır. Fiilden sonra Ving gelir.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "be used to + Ving",
+        "meaning": "-e alışkın olmak",
+        "exampleSentence": "He is used to running every morning."
+      },
+      {
+        "order": 2,
+        "term": "be accustomed to + Ving",
+        "meaning": "-e alışkın olmak",
+        "exampleSentence": "She is accustomed to studying late at night, so she finds it hard to focus in the morning."
+      },
+      {
+        "order": 3,
+        "term": "get used to + Ving",
+        "meaning": "-e alışmak (süreç)",
+        "exampleSentence": "She is getting used to exercising every morning, and it's becoming part of her routine."
+      },
+      {
+        "order": 4,
+        "term": "get accustomed to + Ving",
+        "meaning": "-e alışmak (süreç)",
+        "exampleSentence": "As I travel more, I'm getting accustomed to stepping outside of my comfort zone."
+      }
+    ]
+  },
+  {
+    "order": 13,
+    "title": "PREFERENCE (Tercih)",
+    "usageNote": "WOULD RATHER/WOULD SOONER arkasından V1 alır; WOULD PREFER arkasından TO V1 alır; PREFER karşılaştırmada TO alır.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "would rather + V1 (than V1)",
+        "meaning": "tercih ederim",
+        "exampleSentence": "She would rather read a book than watch TV."
+      },
+      {
+        "order": 2,
+        "term": "would sooner + V1 (than V1)",
+        "meaning": "tercih ederim",
+        "exampleSentence": "I would sooner listen to music than watch a movie tonight."
+      },
+      {
+        "order": 3,
+        "term": "would prefer to V1 (rather than V1)",
+        "meaning": "tercih ederim",
+        "exampleSentence": "They would prefer to eat at the new restaurant rather than the one we usually go to."
+      },
+      {
+        "order": 4,
+        "term": "prefer Ving to Ving",
+        "meaning": "tercih etmek",
+        "exampleSentence": "She prefers cooking at home to dining out."
+      },
+      {
+        "order": 5,
+        "term": "would rather + someone + V2",
+        "meaning": "birinin ...mesini tercih ederim",
+        "exampleSentence": "I would rather you called me before making a decision."
+      },
+      {
+        "order": 6,
+        "term": "would prefer + someone + to V1",
+        "meaning": "birinin ...mesini tercih ederim",
+        "exampleSentence": "She would prefer him to drive carefully on the snowy roads."
+      }
+    ]
+  },
+  {
+    "order": 14,
+    "title": "KONUŞMA ANINA GÖNDERME (Modal + be Ving)",
+    "usageNote": "Konuşma anında devam eden bir eylem hakkında tahmin/tavsiye yapılırken modal + be Ving kalıbı kullanılır.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "must be Ving",
+        "meaning": "...yapıyor olmalı",
+        "exampleSentence": "She must be studying for her exams since she's been in the library all day."
+      },
+      {
+        "order": 2,
+        "term": "can't be Ving",
+        "meaning": "...yapıyor olamaz",
+        "exampleSentence": "The patient can't be making significant progress if they aren't actively participating in therapy."
+      },
+      {
+        "order": 3,
+        "term": "may be Ving",
+        "meaning": "...yapıyor olabilir",
+        "exampleSentence": "The artifacts found at the site may be revealing new insights into ancient civilizations."
+      },
+      {
+        "order": 4,
+        "term": "should be Ving",
+        "meaning": "...yapıyor olmalı (öneri)",
+        "exampleSentence": "We should be reducing our plastic use if we want to protect the environment."
+      },
+      {
+        "order": 5,
+        "term": "could be Ving",
+        "meaning": "...yapıyor olabilir",
+        "exampleSentence": "The sudden changes in behavior could be indicating an underlying psychological issue."
+      }
+    ]
+  },
+  {
+    "order": 15,
+    "title": "WOULD'UN DİĞER KULLANIMLARI",
+    "usageNote": "WOULD; geçmiş alışkanlık dışında, if cümlelerinde farazi durumları ve geçmişten geleceğe bakışı da anlatabilir.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "would (farazi / if cümlesi)",
+        "meaning": "-irdi (farazi durum)",
+        "exampleSentence": "If archaeologists found a hidden library in ancient ruins, it would revolutionize our knowledge of early civilizations."
+      },
+      {
+        "order": 2,
+        "term": "would (geçmişten geleceğe bakış)",
+        "meaning": "-eceğini düşünürdü",
+        "exampleSentence": "Early scientists believed that the printing press would forever change societies."
+      }
+    ]
+  },
+  {
+    "order": 16,
+    "title": "PERFECT MODALS (MODAL + HAVE V3)",
+    "usageNote": "Bir modalı geçmiş anlamda kullanmak için modalın arkasına \"have V3\" eklenir. Her modal farklı bir geçmiş yorumu (tavsiyeye uyulmaması, ihtimal, kesin çıkarım vb.) taşır.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "should have V3",
+        "meaning": "yapmalıydın (ama yapmadın)",
+        "exampleSentence": "The researchers should have conducted more experiments before publishing the results."
+      },
+      {
+        "order": 2,
+        "term": "shouldn't have V3",
+        "meaning": "yapmamalıydın (ama yaptın)",
+        "exampleSentence": "The company shouldn't have ignored the environmental issue."
+      },
+      {
+        "order": 3,
+        "term": "may have V3",
+        "meaning": "yapmış olabilir",
+        "exampleSentence": "The researchers may have overlooked some important data."
+      },
+      {
+        "order": 4,
+        "term": "might have V3",
+        "meaning": "yapmış olabilir",
+        "exampleSentence": "The teacher might have misunderstood the question."
+      },
+      {
+        "order": 5,
+        "term": "could have V3 (ihtimal)",
+        "meaning": "yapmış olabilir",
+        "exampleSentence": "The explorers could have taken the wrong path, resulting in their failure to reach the summit."
+      },
+      {
+        "order": 6,
+        "term": "could have V3 (fırsat kaçırma)",
+        "meaning": "yapabilirdi (ama yapmadı)",
+        "exampleSentence": "I could have gone directly to university, but I decided to travel for a year."
+      },
+      {
+        "order": 7,
+        "term": "can't have V3",
+        "meaning": "yapmış olamaz",
+        "exampleSentence": "The ancient civilization can't have survived without advanced knowledge of agriculture."
+      },
+      {
+        "order": 8,
+        "term": "must have V3",
+        "meaning": "yapmış olmalı",
+        "exampleSentence": "The dinosaurs must have lived in large groups to protect themselves from predators."
+      },
+      {
+        "order": 9,
+        "term": "mustn't have V3",
+        "meaning": "yapmamış olmalı",
+        "exampleSentence": "The ancient people mustn't have known the consequences of deforestation."
+      },
+      {
+        "order": 10,
+        "term": "needn't have V3",
+        "meaning": "yapmana gerek yoktu (ama yaptın)",
+        "exampleSentence": "The king needn't have worried about the attack, as the enemy had already surrendered."
+      },
+      {
+        "order": 11,
+        "term": "would have V3",
+        "meaning": "yapmış olurdu / yapacaktı ama olmadı",
+        "exampleSentence": "If the ancient scripts had been preserved, historians would have gained deeper insights into lost civilizations."
+      }
+    ]
+  }
+]

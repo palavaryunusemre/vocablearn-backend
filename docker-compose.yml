@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: vocablearn-postgres
+    environment:
+      POSTGRES_DB: vocablearn
+      POSTGRES_USER: vocablearn
+      POSTGRES_PASSWORD: vocablearn
+    ports:
+      - "5433:5432"
+    volumes:
+      - vocablearn-data:/var/lib/postgresql/data
+
+volumes:
+  vocablearn-data:

@@ -1,0 +1,1036 @@
+[
+  {
+    "order": 1,
+    "title": "NEDEN SÖYLEYEN BAĞLAÇLAR (çünkü, -dığı için / -den dolayı, yüzünden)",
+    "translationNote": "-dığı için, çünkü / -den dolayı, yüzünden",
+    "usageNote": "because, since, for, as... gibi bağlaçlar arkalarından TAM CÜMLE; because of, due to, owing to... gibi olanlar arkalarından İSİM alır.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "because",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": "Many historical records were lost because they were not properly preserved during times of conflict."
+      },
+      {
+        "order": 2,
+        "term": "since",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": "Since the Himalayas are the highest mountain range in the world, they have a significant impact on the climate of South Asia."
+      },
+      {
+        "order": 3,
+        "term": "for",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": "The city was abandoned for it was no longer defensible after the series of invasions."
+      },
+      {
+        "order": 4,
+        "term": "as",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": "She took a different route to the hotel, as the main road was closed for repairs."
+      },
+      {
+        "order": 5,
+        "term": "now that",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": ""
+      },
+      {
+        "order": 6,
+        "term": "in that",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": ""
+      },
+      {
+        "order": 7,
+        "term": "given (that)",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": ""
+      },
+      {
+        "order": 8,
+        "term": "seeing (that)",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": ""
+      },
+      {
+        "order": 9,
+        "term": "seeing as",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": ""
+      },
+      {
+        "order": 10,
+        "term": "inasmuch as",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": "Inasmuch as water is vital for life, all living organisms depend on it for survival."
+      },
+      {
+        "order": 11,
+        "term": "on the grounds that",
+        "meaning": "-dığı için, çünkü",
+        "exampleSentence": ""
+      },
+      {
+        "order": 12,
+        "term": "because of",
+        "meaning": "-den dolayı, yüzünden",
+        "exampleSentence": "Many villages thrive because of their close-knit communities and reliance on local traditions."
+      },
+      {
+        "order": 13,
+        "term": "due to",
+        "meaning": "-den dolayı, yüzünden",
+        "exampleSentence": "The town was evacuated due to the imminent threat of a volcanic eruption that could cause widespread destruction."
+      },
+      {
+        "order": 14,
+        "term": "owing to",
+        "meaning": "-den dolayı, yüzünden",
+        "exampleSentence": "Owing to advancements in technology, communication has become faster and more efficient across the globe."
+      },
+      {
+        "order": 15,
+        "term": "thanks to",
+        "meaning": "-den dolayı, yüzünden",
+        "exampleSentence": "Thanks to social media, people can easily connect with friends and share updates instantly worldwide."
+      },
+      {
+        "order": 16,
+        "term": "as a result of",
+        "meaning": "-den dolayı, yüzünden",
+        "exampleSentence": "As a result of / as a consequence of recent scientific research, new treatments for previously incurable diseases have been developed."
+      },
+      {
+        "order": 17,
+        "term": "as a consequence of",
+        "meaning": "-den dolayı, yüzünden",
+        "exampleSentence": "As a result of / as a consequence of recent scientific research, new treatments for previously incurable diseases have been developed."
+      },
+      {
+        "order": 18,
+        "term": "in view of",
+        "meaning": "-den dolayı, yüzünden",
+        "exampleSentence": "In view of the upcoming deadline, the team worked overtime to complete the project on time."
+      },
+      {
+        "order": 19,
+        "term": "on account of",
+        "meaning": "-den dolayı, yüzünden",
+        "exampleSentence": "The city's air quality has worsened on account of the increasing levels of industrial pollution and traffic."
+      },
+      {
+        "order": 20,
+        "term": "by virtue of",
+        "meaning": "-den dolayı, yüzünden",
+        "exampleSentence": ""
+      },
+      {
+        "order": 21,
+        "term": "on the grounds of",
+        "meaning": "-den dolayı, yüzünden",
+        "exampleSentence": ""
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "title": "SONUÇ SÖYLEYEN BAĞLAÇLAR (bu nedenle, bu yüzden · Tam Cümle)",
+    "translationNote": "bu nedenle, bu yüzden",
+    "usageNote": "arkalarından TAM CÜMLE alırlar.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "so",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": "Libraries offer a quiet environment for reading and studying, so students frequently visit them to focus on their work."
+      },
+      {
+        "order": 2,
+        "term": "therefore",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": "Urbanization increases population density in cities, therefore it often leads to higher demand for housing and public services."
+      },
+      {
+        "order": 3,
+        "term": "as a result",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": "Many people rely on computers for work and communication, and as a result / as a consequent, digital skills have become essential."
+      },
+      {
+        "order": 4,
+        "term": "as a consequent",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": "Many people rely on computers for work and communication, and as a result / as a consequent, digital skills have become essential."
+      },
+      {
+        "order": 5,
+        "term": "consequently",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": "The development of advanced medical technology has revolutionized treatments, and consequently, patients now have better chances of recovery."
+      },
+      {
+        "order": 6,
+        "term": "that is why",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": ""
+      },
+      {
+        "order": 7,
+        "term": "thus",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": "Mobile phones have become essential for communication, thus making them a crucial part of modern life."
+      },
+      {
+        "order": 8,
+        "term": "hence",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": "Effective leaders inspire their teams and set clear goals, hence they often achieve higher levels of success."
+      },
+      {
+        "order": 9,
+        "term": "thereby",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": ""
+      },
+      {
+        "order": 10,
+        "term": "accordingly",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": "Summer vacation provides a break from school, and accordingly, students use this time for relaxation and travel."
+      },
+      {
+        "order": 11,
+        "term": "for this reason",
+        "meaning": "bu nedenle, bu yüzden",
+        "exampleSentence": ""
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "title": "ZITLIK BAĞLAÇLARI",
+    "translationNote": "-e rağmen / ama, fakat / aksine, öte yandan",
+    "usageNote": "although, though, but, on the contrary... gibi bağlaçlar arkalarından TAM CÜMLE; despite, in spite of, contrary to, unlike... gibi olanlar arkalarından İSİM alır.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "although",
+        "meaning": "-e rağmen",
+        "exampleSentence": "Although deserts receive little rainfall, they can support diverse life forms adapted to harsh conditions."
+      },
+      {
+        "order": 2,
+        "term": "though",
+        "meaning": "-e rağmen",
+        "exampleSentence": "Many animals adapt well to changing environments, though some species struggle to survive under new conditions."
+      },
+      {
+        "order": 3,
+        "term": "even though",
+        "meaning": "-e rağmen",
+        "exampleSentence": "Even though global warming is a serious issue, many people continue to ignore the warnings and evidence."
+      },
+      {
+        "order": 4,
+        "term": "even if",
+        "meaning": "-e rağmen",
+        "exampleSentence": "Even if saving trees seems challenging, every small effort can contribute significantly to environmental health."
+      },
+      {
+        "order": 5,
+        "term": "while",
+        "meaning": "-e rağmen",
+        "exampleSentence": "While nature provides countless resources and beauty, human activities often threaten its delicate balance and ecosystems."
+      },
+      {
+        "order": 6,
+        "term": "whereas",
+        "meaning": "-e rağmen",
+        "exampleSentence": "Regular exercise improves physical health, whereas a sedentary lifestyle can lead to numerous health issues over time."
+      },
+      {
+        "order": 7,
+        "term": "much as",
+        "meaning": "-e rağmen",
+        "exampleSentence": "Much as we appreciate the beauty of nature, our actions often lead to its degradation and loss."
+      },
+      {
+        "order": 8,
+        "term": "despite",
+        "meaning": "-e rağmen",
+        "exampleSentence": "Despite careful planning, time management can be challenging due to unexpected interruptions and changing priorities."
+      },
+      {
+        "order": 9,
+        "term": "in spite of",
+        "meaning": "-e rağmen",
+        "exampleSentence": "In spite of the severe earthquake, the community quickly came together to offer support and rebuild."
+      },
+      {
+        "order": 10,
+        "term": "notwithstanding",
+        "meaning": "-e rağmen",
+        "exampleSentence": "Notwithstanding the high unemployment rates, many individuals continue to pursue education and training for better job prospects."
+      },
+      {
+        "order": 11,
+        "term": "albeit",
+        "meaning": "-e rağmen",
+        "exampleSentence": "The project was successful, albeit with some minor setbacks."
+      },
+      {
+        "order": 12,
+        "term": "for all",
+        "meaning": "-e rağmen",
+        "exampleSentence": ""
+      },
+      {
+        "order": 13,
+        "term": "but",
+        "meaning": "ama, fakat",
+        "exampleSentence": "Forests play a crucial role in the environment, but deforestation continues to threaten their health and diversity."
+      },
+      {
+        "order": 14,
+        "term": "yet",
+        "meaning": "ama, fakat",
+        "exampleSentence": "Water is essential for all forms of life, yet many regions still face severe water scarcity issues."
+      },
+      {
+        "order": 15,
+        "term": "however",
+        "meaning": "ama, fakat",
+        "exampleSentence": "The global population continues to grow rapidly, however, some regions are experiencing a decline in birth rates."
+      },
+      {
+        "order": 16,
+        "term": "even so",
+        "meaning": "ama, fakat",
+        "exampleSentence": "Freedom of speech is a fundamental right, even so, it must be exercised responsibly and respectfully."
+      },
+      {
+        "order": 17,
+        "term": "nevertheless",
+        "meaning": "ama, fakat",
+        "exampleSentence": "Cyber crime poses serious threats to security, nevertheless/nonetheless, ongoing advancements in technology continue to improve defense measures."
+      },
+      {
+        "order": 18,
+        "term": "nonetheless",
+        "meaning": "ama, fakat",
+        "exampleSentence": "Cyber crime poses serious threats to security, nevertheless/nonetheless, ongoing advancements in technology continue to improve defense measures."
+      },
+      {
+        "order": 19,
+        "term": "still",
+        "meaning": "ama, fakat",
+        "exampleSentence": "Water is essential for all forms of life, yet many regions still face severe water scarcity issues."
+      },
+      {
+        "order": 20,
+        "term": "on the contrary",
+        "meaning": "aksine, öte yandan",
+        "exampleSentence": "Many expected the project to fail; on the contrary, it turned out to be a success."
+      },
+      {
+        "order": 21,
+        "term": "conversely",
+        "meaning": "aksine, öte yandan",
+        "exampleSentence": "Tourist numbers increased in summer; conversely, they dropped significantly during the winter months."
+      },
+      {
+        "order": 22,
+        "term": "in contrast",
+        "meaning": "aksine, öte yandan",
+        "exampleSentence": ""
+      },
+      {
+        "order": 23,
+        "term": "by contrast",
+        "meaning": "aksine, öte yandan",
+        "exampleSentence": "Artificial intelligence can process data rapidly; in/by contrast, human analysis often requires much more time."
+      },
+      {
+        "order": 24,
+        "term": "on the other hand",
+        "meaning": "aksine, öte yandan",
+        "exampleSentence": "Online shopping offers convenience and variety; on the other hand, it can lack personal interaction."
+      },
+      {
+        "order": 25,
+        "term": "contrary to",
+        "meaning": "aksine, öte yandan",
+        "exampleSentence": "Contrary to common belief, many species of bats are actually beneficial for controlling insect populations."
+      },
+      {
+        "order": 26,
+        "term": "in contrast to",
+        "meaning": "aksine, öte yandan",
+        "exampleSentence": ""
+      },
+      {
+        "order": 27,
+        "term": "unlike",
+        "meaning": "aksine, öte yandan",
+        "exampleSentence": "Unlike other animals, dolphins use complex vocalizations to communicate."
+      },
+      {
+        "order": 28,
+        "term": "as opposed to",
+        "meaning": "aksine, öte yandan",
+        "exampleSentence": "Urban areas often struggle with pollution, as opposed to rural areas that generally have cleaner air."
+      }
+    ]
+  },
+  {
+    "order": 4,
+    "title": "EKLEME VE PARALELLİK BAĞLAÇLARI (ek olarak, dahası)",
+    "translationNote": "ek olarak, dahası / yanısıra",
+    "usageNote": "in addition, moreover, furthermore... gibi bağlaçlar arkalarından TAM CÜMLE; as well as, in addition to, apart from, along with... gibi olanlar arkalarından İSİM alır.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "in addition",
+        "meaning": "ek olarak, dahası",
+        "exampleSentence": "Teamwork improves problem-solving skills; in addition, it fosters a sense of unity among team members."
+      },
+      {
+        "order": 2,
+        "term": "additionally",
+        "meaning": "ek olarak, dahası",
+        "exampleSentence": ""
+      },
+      {
+        "order": 3,
+        "term": "moreover",
+        "meaning": "ek olarak, dahası",
+        "exampleSentence": "Saving money is vital; moreover, investing wisely can help grow your wealth over time."
+      },
+      {
+        "order": 4,
+        "term": "besides",
+        "meaning": "ek olarak, dahası",
+        "exampleSentence": "An ideal student is diligent in studies; besides, they actively participate in class discussions."
+      },
+      {
+        "order": 5,
+        "term": "furthermore",
+        "meaning": "ek olarak, dahası",
+        "exampleSentence": "Recycling reduces waste in landfills; furthermore, it conserves natural resources and decreases pollution in the environment."
+      },
+      {
+        "order": 6,
+        "term": "also",
+        "meaning": "ek olarak, dahası",
+        "exampleSentence": "Protecting natural resources is vital for the environment; also, it ensures their availability for future generations."
+      },
+      {
+        "order": 7,
+        "term": "what’s more",
+        "meaning": "ek olarak, dahası",
+        "exampleSentence": ""
+      },
+      {
+        "order": 8,
+        "term": "as well as",
+        "meaning": "ek olarak, yanısıra",
+        "exampleSentence": "The brain controls cognitive functions as well as basic bodily functions, making it crucial for survival."
+      },
+      {
+        "order": 9,
+        "term": "in addition to",
+        "meaning": "ek olarak, yanısıra",
+        "exampleSentence": "Agriculture supports food production in addition to providing materials for clothing and building, benefiting society."
+      },
+      {
+        "order": 10,
+        "term": "apart from",
+        "meaning": "ek olarak, yanısıra",
+        "exampleSentence": "History teaches us about past civilizations apart from the evolution of human society."
+      },
+      {
+        "order": 11,
+        "term": "along with",
+        "meaning": "ek olarak, yanısıra",
+        "exampleSentence": "Historical artifacts, along with written records, help us understand past cultures and their societies."
+      },
+      {
+        "order": 12,
+        "term": "together with",
+        "meaning": "ek olarak, yanısıra",
+        "exampleSentence": ""
+      },
+      {
+        "order": 13,
+        "term": "coupled with",
+        "meaning": "ek olarak, yanısıra",
+        "exampleSentence": "Poverty impacts quality of life, coupled with limiting access to education and healthcare services."
+      }
+    ]
+  },
+  {
+    "order": 5,
+    "title": "AMAÇ SÖYLEYEN BAĞLAÇLAR (-mek, -mak için · Fiil)",
+    "translationNote": "-mek, -mak için",
+    "usageNote": "“so that ve in order that” hariç arkalarından doğrudan FİİL alırlar.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "to",
+        "meaning": "-mek, -mak için",
+        "exampleSentence": "To access information quickly, people use the internet for research, communication, and entertainment."
+      },
+      {
+        "order": 2,
+        "term": "in order to",
+        "meaning": "-mek, -mak için",
+        "exampleSentence": "Scientists monitor seismic activity in order to predict tsunamis and provide early warnings to communities."
+      },
+      {
+        "order": 3,
+        "term": "so as to",
+        "meaning": "-mek, -mak için",
+        "exampleSentence": "Artists during the Renaissance studied classical works so as to revive ancient techniques and ideas."
+      },
+      {
+        "order": 4,
+        "term": "in an effort to",
+        "meaning": "-mek, -mak için",
+        "exampleSentence": "People show patriotism in an effort to express commitment to their country's values."
+      },
+      {
+        "order": 5,
+        "term": "in an attempt to",
+        "meaning": "-mek, -mak için",
+        "exampleSentence": ""
+      },
+      {
+        "order": 6,
+        "term": "aiming to",
+        "meaning": "-mek, -mak için",
+        "exampleSentence": ""
+      },
+      {
+        "order": 7,
+        "term": "in order that (T.C)",
+        "meaning": "-mek, -mak için",
+        "exampleSentence": ""
+      },
+      {
+        "order": 8,
+        "term": "so that (T.C)",
+        "meaning": "-mek, -mak için",
+        "exampleSentence": ""
+      }
+    ]
+  },
+  {
+    "order": 6,
+    "title": "KOŞUL BAĞLAÇLARI",
+    "translationNote": null,
+    "usageNote": null,
+    "entries": [
+      {
+        "order": 1,
+        "term": "if",
+        "meaning": "eğer",
+        "exampleSentence": "If you live in a big city, you might face both exciting opportunities and challenging crowds."
+      },
+      {
+        "order": 2,
+        "term": "only if",
+        "meaning": "eğer, ancak ve ancak)",
+        "exampleSentence": "Farmers can manage crops effectively only if they adapt to drought conditions."
+      },
+      {
+        "order": 3,
+        "term": "only when",
+        "meaning": "eğer, ancak ve ancak)",
+        "exampleSentence": ""
+      },
+      {
+        "order": 4,
+        "term": "providing that",
+        "meaning": "-mak şartıyla",
+        "exampleSentence": ""
+      },
+      {
+        "order": 5,
+        "term": "provided that",
+        "meaning": "-mak şartıyla",
+        "exampleSentence": ""
+      },
+      {
+        "order": 6,
+        "term": "on condition that",
+        "meaning": "... şartıyla",
+        "exampleSentence": "You can complete the project on condition that you start working on it without delay."
+      },
+      {
+        "order": 7,
+        "term": "as long as",
+        "meaning": "-dığı sürece",
+        "exampleSentence": "You can maintain good health as long as you eat well, exercise regularly, and manage stress."
+      },
+      {
+        "order": 8,
+        "term": "so long as",
+        "meaning": "-dığı sürece",
+        "exampleSentence": ""
+      },
+      {
+        "order": 9,
+        "term": "unless",
+        "meaning": "-mezse, -mazsa",
+        "exampleSentence": "You won’t succeed in your goals unless you put in consistent effort and stay focused."
+      },
+      {
+        "order": 10,
+        "term": "in the event of",
+        "meaning": "... olursa, ... durumunda",
+        "exampleSentence": ""
+      },
+      {
+        "order": 11,
+        "term": "that",
+        "meaning": "... olursa, ... durumunda",
+        "exampleSentence": "Biodiversity can thrive in an area, providing / provided (that) we protect natural habitats and reduce pollution."
+      },
+      {
+        "order": 12,
+        "term": "suppose that",
+        "meaning": "Farz edelim ki,",
+        "exampleSentence": ""
+      },
+      {
+        "order": 13,
+        "term": "Supposing that",
+        "meaning": "Farz edelim ki,",
+        "exampleSentence": ""
+      }
+    ]
+  },
+  {
+    "order": 7,
+    "title": "ÖRNEK VEREN VE AÇIKLAYAN BAĞLAÇLAR",
+    "translationNote": "örneğin / yani, başka bir deyişle",
+    "usageNote": "arkalarından TAM CÜMLE alırlar.",
+    "entries": [
+      {
+        "order": 1,
+        "term": "for example",
+        "meaning": "örneğin",
+        "exampleSentence": "Terrorism often involves extreme violence and fear; for example, recent attacks in major cities have caused widespread panic."
+      },
+      {
+        "order": 2,
+        "term": "for instance",
+        "meaning": "örneğin",
+        "exampleSentence": "Modern technology has transformed communication; for instance, social media platforms allow people to connect instantly across the globe."
+      },
+      {
+        "order": 3,
+        "term": "namely (isim)",
+        "meaning": "örneğin",
+        "exampleSentence": ""
+      },
+      {
+        "order": 4,
+        "term": "in other words",
+        "meaning": "yani, başka bir deyişle",
+        "exampleSentence": "In other words, they exchange essential nutrients."
+      },
+      {
+        "order": 5,
+        "term": "that is",
+        "meaning": "yani, başka bir deyişle",
+        "exampleSentence": "That is, they capture and digest small insects."
+      },
+      {
+        "order": 6,
+        "term": "that is to say",
+        "meaning": "yani, başka bir deyişle",
+        "exampleSentence": "That is to say, they can restore their damaged tissues."
+      }
+    ]
+  },
+  {
+    "order": 8,
+    "title": "İKİLİ BAĞLAÇLAR",
+    "translationNote": null,
+    "usageNote": null,
+    "entries": [
+      {
+        "order": 1,
+        "term": "o kadar... ki 4",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 2,
+        "term": "so + adjective/adverb + that",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 3,
+        "term": "such + adjective + noun + that",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 4,
+        "term": "not only ... but also",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 5,
+        "term": "either ... or ... ya o... ya da o",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 6,
+        "term": "neither ... nor ne o... ne de bu",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 7,
+        "term": "as...as kadar",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 8,
+        "term": "no sooner ... than",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 9,
+        "term": "olur olmaz / -er, -mez",
+        "meaning": "",
+        "exampleSentence": ""
+      }
+    ]
+  },
+  {
+    "order": 9,
+    "title": "BAĞLAÇ AVCILARINA ÖZEL",
+    "translationNote": null,
+    "usageNote": null,
+    "entries": [
+      {
+        "order": 1,
+        "term": "instead of",
+        "meaning": "",
+        "exampleSentence": "Instead of driving cars everywhere, we should consider biking or walking to reduce carbon emissions."
+      },
+      {
+        "order": 2,
+        "term": "as to",
+        "meaning": "",
+        "exampleSentence": "The scientist conducted extensive research as to the effectiveness of the new vaccine."
+      }
+    ]
+  },
+  {
+    "order": 10,
+    "title": "KIYIDA KÖŞEDE KALMIŞ BAĞLAÇLAR",
+    "translationNote": null,
+    "usageNote": null,
+    "entries": [
+      {
+        "order": 1,
+        "term": "as of ... itibariyle",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 2,
+        "term": "as if",
+        "meaning": "",
+        "exampleSentence": "He acted as if he knew everything, but in reality, he was quite clueless."
+      },
+      {
+        "order": 3,
+        "term": "in case ... olur diye (tedbir)",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 4,
+        "term": "in case of ... durumunda",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 5,
+        "term": "regardless of",
+        "meaning": "",
+        "exampleSentence": "Regardless of the weather conditions, the outdoor concert will continue as planned this Saturday evening."
+      },
+      {
+        "order": 6,
+        "term": "otherwise",
+        "meaning": "",
+        "exampleSentence": "We must reduce plastic usage; otherwise, our oceans will continue to suffer from severe pollution."
+      },
+      {
+        "order": 7,
+        "term": "or else yoksa, aksi taktirde",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 8,
+        "term": "except for",
+        "meaning": "",
+        "exampleSentence": "Except for a few small nations, most countries have ratified the climate change agreement."
+      },
+      {
+        "order": 9,
+        "term": "with the exception of",
+        "meaning": "",
+        "exampleSentence": "With the exception of the Sahara Desert, most regions receive regular rainfall throughout the year."
+      },
+      {
+        "order": 10,
+        "term": "apart from / aside from",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 11,
+        "term": "for fear that",
+        "meaning": "",
+        "exampleSentence": "He decided to leave early for fear that he might miss his flight completely."
+      },
+      {
+        "order": 12,
+        "term": "lest ... korkusuyla, -mesin diye",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 13,
+        "term": "meanwhile",
+        "meaning": "",
+        "exampleSentence": "The children were playing in the garden, meanwhile their parents were preparing dinner inside."
+      },
+      {
+        "order": 14,
+        "term": "likewise",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 15,
+        "term": "in fact",
+        "meaning": "",
+        "exampleSentence": "Many students struggle with math; in fact, it is one of the hardest subjects to master."
+      },
+      {
+        "order": 16,
+        "term": "as a mattter of fact",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 17,
+        "term": "actually",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 18,
+        "term": "indeed",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 19,
+        "term": "to summarise",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 20,
+        "term": "to sum up",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 21,
+        "term": "in conclusion",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 22,
+        "term": "briefly",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 23,
+        "term": "all in all",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 24,
+        "term": "in short",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 25,
+        "term": "in summary",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 26,
+        "term": "in essence",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 27,
+        "term": "in accordance with",
+        "meaning": "",
+        "exampleSentence": "The zoo changed the feeding schedule, in accordance with expert advice, to improve the animals’ health conditions."
+      },
+      {
+        "order": 28,
+        "term": "in line with",
+        "meaning": "",
+        "exampleSentence": "The company updated its privacy policy in line with new regulations to protect users’ personal data more effectively."
+      },
+      {
+        "order": 29,
+        "term": "aligned with",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 30,
+        "term": "for/with the purpose of",
+        "meaning": "",
+        "exampleSentence": "I will set an alarm for 6 AM in case I oversleep and miss the meeting."
+      },
+      {
+        "order": 31,
+        "term": "with the aim of",
+        "meaning": "",
+        "exampleSentence": "The organization launched a new campaign, for the purpose of/with the aim of raising awareness about plastic pollution in oceans worldwide."
+      },
+      {
+        "order": 32,
+        "term": "with the goal of",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 33,
+        "term": "on the basis of -e dayanarak, baz alarak",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 34,
+        "term": "in conjuction with",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 35,
+        "term": "similar to",
+        "meaning": "",
+        "exampleSentence": "Whale communication is similar to/akin to human language because it involves patterns, repetition, and responses to social and environmental cues."
+      },
+      {
+        "order": 36,
+        "term": "akin to -e benzer",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 37,
+        "term": "regarding",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 38,
+        "term": "pertaining to",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 39,
+        "term": "concerning",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 40,
+        "term": "with respect to",
+        "meaning": "",
+        "exampleSentence": "The study revealed significant differences with respect to learning styles between younger and older online education participants."
+      },
+      {
+        "order": 41,
+        "term": "with reference to",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 42,
+        "term": "with regard to",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 43,
+        "term": "olarak",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 44,
+        "term": "in connection with",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 45,
+        "term": "in relation to",
+        "meaning": "",
+        "exampleSentence": "The researcher analyzed the data in relation to social media usage among teenagers during exam preparation periods."
+      },
+      {
+        "order": 46,
+        "term": "with the help of",
+        "meaning": "",
+        "exampleSentence": "The ancient ruins were reconstructed with the help of advanced technology and detailed historical records from local archives."
+      },
+      {
+        "order": 47,
+        "term": "in the hope of ... umuduyla",
+        "meaning": "",
+        "exampleSentence": ""
+      },
+      {
+        "order": 48,
+        "term": "as much as her ne kadar, ... olsa da",
+        "meaning": "",
+        "exampleSentence": ""
+      }
+    ]
+  }
+]
