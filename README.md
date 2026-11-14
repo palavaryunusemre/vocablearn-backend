@@ -1,22 +1,24 @@
-# EventHub — Etkinlik/Seminer Platformu (Backend)
+# VocabLearn — Backend
 
-Spring Boot tabanlı backend. Herkesin etkinlik/seminer/söyleşi oluşturabildiği,
-katılımcıların QR kod ile kayıt olup check-in yaptığı ve etkinlik sonunda QR
-doğrulamalı sertifika aldığı bir platform. Üniversite içi kullanım (kurum
-e-postasıyla doğrulanmış kullanıcılar + kuruma özel etkinlikler) ve herkese
-açık etkinlikler birlikte desteklenir.
+YDS/YÖKDİL odaklı İngilizce öğrenme platformunun Spring Boot backend'i.
+Seviyeli okuma parçaları, bağlaç (adverbial clause) ve modal konu anlatımları,
+bunlara bağlı quiz/alıştırma motoru, ilerleme takibi ve yapay zekâ destekli
+soru-cevap asistanı sunar.
+
+İlgili frontend: [vocablearn-frontend](https://github.com/palavaryunusemre/vocablearn-frontend)
 
 ---
 
 ## İçindekiler
 
 - [Teknoloji Yığını](#teknoloji-yığını)
-- [Çalıştırma](#çalıştırma)
+- [Docker ile Çalıştırma (önerilen)](#docker-ile-çalıştırma-önerilen)
+- [Lokal (Docker'sız) Çalıştırma](#lokal-dockersız-çalıştırma)
+- [Ortam Değişkenleri / Gizli Anahtarlar](#ortam-değişkenleri--gizli-anahtarlar)
+- [Veritabanı Yedeği](#veritabanı-yedeği)
+- [Sıfırdan Kurulum Scripti](#sıfırdan-kurulum-scripti)
 - [Roller](#roller)
-- [Yanıt Zarfı (Result / DataResult)](#yanıt-zarfı-result--dataresult)
-- [Kimlik Doğrulama](#kimlik-doğrulama)
 - [REST API](#rest-api)
-- [Etkinlik Akışı](#etkinlik-akışı)
 
 ---
 
@@ -25,114 +27,131 @@ açık etkinlikler birlikte desteklenir.
 | Katman | Teknoloji |
 |---|---|
 | Framework | Spring Boot `4.1.0` (Java `17`) |
-| Veritabanı | PostgreSQL (Spring Data JPA / Hibernate) |
-| Kimlik doğrulama | Spring Security + JWT (`jjwt` `0.11.5`), stateless |
-| QR üretimi | ZXing (`com.google.zxing:core`/`javase`) |
-| Sertifika PDF | Thymeleaf şablonu + OpenHTMLtoPDF |
-| E-posta doğrulama | `spring-boot-starter-mail` (bağımsız `EmailVerificationService`) |
-| Log altyapısı (docker-stack) | Elasticsearch + Kibana + Filebeat + Grafana (`docker-stack/docker-compose.yml`) |
+| Veritabanı | PostgreSQL (Spring Data JPA / Hibernate), şema geçişleri Flyway (`V1`–`V7`) |
+| Kimlik doğrulama | Spring Security + JWT (`jjwt` `0.12.6`), HttpOnly çerez tabanlı stateless oturum |
+| Yapay zekâ | Spring AI, Groq'un OpenAI-uyumlu uç noktası (`/api/chat`) |
+| Alıştırma motoru | Tip bazlı Generator/Grader factory deseni (`MULTIPLE_CHOICE`, `FILL_BLANK`, `MATCHING`, `TYPING`) |
+| API dokümantasyonu | springdoc-openapi (`/swagger-ui.html`) |
 
-## Çalıştırma
+## Docker ile Çalıştırma (önerilen)
 
-Destek servisleri (Postgres, Redis, ELK, Grafana) için:
-```bash
-cd docker-stack && docker compose up -d
+Bu repo ile `../frontend` (yani [vocablearn-frontend](https://github.com/palavaryunusemre/vocablearn-frontend))
+**yan yana klasörler** olarak klonlanmış olmalı:
+
+```
+vocablearn/
+├── backend/   ← bu repo
+└── frontend/
 ```
 
-Backend:
 ```bash
-./mvnw spring-boot:run
+cd backend
+cp .env.example .env   # .env içine gerçek GROQ_API_KEY'i yaz
+docker compose up -d --build
 ```
 
-`src/main/resources/application.yaml` tarafından okunan ortam değişkenleri:
+Bu tek komut üç servisi ayağa kaldırır:
 
-| Ortam Değişkeni | Amaç |
+| Servis | Adres | Açıklama |
+|---|---|---|
+| `postgres` | `localhost:5433` | Veritabanı (named volume ile kalıcı) |
+| `backend` | `localhost:8080` | Spring Boot API, Swagger: `/swagger-ui.html` |
+| `frontend` | `localhost:3000` | Next.js arayüz |
+
+İlk build birkaç dakika sürer (Maven bağımlılıkları + Next.js build). Sonraki
+`docker compose up -d --build` çağrıları Docker layer cache sayesinde çok
+daha hızlıdır.
+
+## Lokal (Docker'sız) Çalıştırma
+
+```bash
+docker compose up -d postgres   # sadece veritabanı
+./mvnw spring-boot:run -Dspring-boot.run.profiles=local
+```
+
+`local` profili, gitignore'lu `src/main/resources/application-local.yaml`
+dosyasından `spring.ai.openai.api-key` değerini okur (bkz. aşağıdaki
+Ortam Değişkenleri bölümü).
+
+## Ortam Değişkenleri / Gizli Anahtarlar
+
+**Evet, anahtarlar env/profil dosyalarında tutuluyor, koda gömülü değil:**
+
+| Senaryo | Dosya | Git'e gider mi? |
+|---|---|---|
+| Docker Compose | `.env` (kök dizinde, `.env.example`'dan kopyalanır) | ❌ Hayır (`.gitignore`) |
+| Lokal `./mvnw` + `local` profili | `src/main/resources/application-local.yaml` | ❌ Hayır (`.gitignore`) |
+| Şablon/örnek | `.env.example` | ✅ Evet (gerçek değer içermez) |
+
+Gereken anahtarlar:
+
+| Değişken | Amaç |
 |---|---|
-| `DB_PASSWORD` | PostgreSQL şifresi |
-| `USER_PASSWORD` | `spring.security.user.password` |
-| `JWT_SECRET_KEY` | JWT imzalama anahtarı (Base64, HMAC-SHA256) |
+| `GROQ_API_KEY` | `/api/chat` yapay zekâ asistanı için Groq (OpenAI-uyumlu) API anahtarı |
+| `JWT_SECRET` | JWT imzalama anahtarı (en az 32 byte); verilmezse geliştirme varsayılanı kullanılır |
 
-İlk `ADMIN` kullanıcısı otomatik seed edilmez; ilk kaydı doğrudan veritabanına
-(ör. `psql` ile) veya rol kısıtı olmayan `POST /api/auth/signIn` çağrısıyla elle
-oluşturup rolünü sonradan `ADMIN`'e çekmeniz gerekir.
+## Veritabanı Yedeği
+
+Parça/bağlaç/modal/quiz içeriği zaten `src/main/resources/data/*.json`
+dosyalarından **otomatik seed edilir** (ilk açılışta) -- bunun için ayrı bir
+DB yedeğine gerek yok, fresh bir kurulum bu içerikle kendiliğinden dolu gelir.
+
+`db-backup/` klasörü yalnızca **gerçek kullanıcı hesaplarını/ilerlemeyi**
+bir makineden diğerine taşımak istediğinizde kullanılır ve bilerek
+`.gitignore`'dadır -- şifre hash'leri içerdiği için **public repoya asla
+commit edilmemelidir**. Taşımak isterseniz dosyayı elden/özel bir kanaldan
+(USB, `scp`, vb.) hedef makineye kopyalayın.
+
+Yedek almak için:
+```bash
+mkdir -p db-backup
+docker exec vocablearn-postgres pg_dump -U vocablearn -d vocablearn --no-owner --no-privileges \
+  | gzip > db-backup/vocablearn_backup.sql.gz
+```
+
+Restore etmek için (hedef veritabanı boşken):
+```bash
+gunzip -c db-backup/vocablearn_backup.sql.gz | docker exec -i vocablearn-postgres psql -U vocablearn -d vocablearn
+```
+
+## Sıfırdan Kurulum Scripti
+
+Yeni/boş bir makinede (sadece `git`, `docker` ve `docker compose` kurulu
+olması yeterli) backend + frontend'i tek komutla ayağa kaldırır. İçerik
+(parçalar/bağlaçlar/modallar/quiz'ler) seeder'lar sayesinde otomatik gelir;
+eğer elden taşıdığınız bir `db-backup/vocablearn_backup.sql.gz` varsa script
+onu da restore eder:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/palavaryunusemre/vocablearn-backend/main/scripts/setup.sh -o setup.sh
+chmod +x setup.sh
+./setup.sh <GROQ_API_KEY>      # GROQ_API_KEY opsiyonel argüman
+```
+
+Script, `vocablearn-backend` ve `vocablearn-frontend` repolarını `./vocablearn/`
+altına klonlar, `.env` dosyasını hazırlar, Postgres'i ayağa kaldırıp veritabanı
+boşsa yedeği restore eder, ardından backend + frontend image'larını build edip
+başlatır. Detaylar için [scripts/setup.sh](scripts/setup.sh).
 
 ## Roller
 
 | Rol | Kapsam |
 |---|---|
-| `ADMIN` | Etkinlik onay/red kuyruğunu yönetir, kurum/kategori CRUD'u yapar, tüm kullanıcıları yönetir |
-| `USER` | Etkinlik oluşturabilir (admin onayından sonra yayınlanır), etkinliklere kayıt olur, QR ile check-in yapar, sertifikalarını görür |
-
-## Yanıt Zarfı (Result / DataResult)
-
-Tüm controller'lar `ResponseEntity<Result<T>>` ya da `ResponseEntity<DataResult<T>>`
-döner (`utilities.result` paketi):
-
-```jsonc
-// Result<T>
-{ "success": true, "code": 200, "message": "string", "errors": ["..."] }
-
-// DataResult<T> (Result'ı extend eder)
-{ "success": true, "code": 200, "data": { /* T */ }, "pageInfo": { /* sayfalı yanıtlarda */ } }
-```
-
-## Kimlik Doğrulama
-
-- JWT — `Authorization: Bearer <token>` header'ı ya da HttpOnly cookie (`JwtAuthenticationFilter`).
-- `POST /api/auth/logIn` başarılı girişte `eventhub_jwt`/`eventhub_user`/`eventhub_refresh` cookie'lerini set eder.
-- Token claim'leri: `sub`=email, `userID`, `email`, `role` (`ROLE_` önekli), `institutionId`, `firstName`, `lastName`.
+| `USER` | Parçaları okur, alıştırma/quiz çözer, ilerlemesini görür, chat asistanına soru sorar |
+| `ADMIN` | `/api/admin/**` altındaki yönetimsel uçlara erişir |
 
 ## REST API
 
-Base path'ler `config/RestApis.java`'dan gelir.
+| Alan | Base path | Not |
+|---|---|---|
+| Auth | `/api/auth` | `register`, `login`, `change-password`, `logout` |
+| Parçalar | `/api/passages` | Seviyeye göre filtrelenebilir liste + detay |
+| Parça soruları | `/api/passages/{id}/questions` | Okuduğunu anlama soruları |
+| Parça alıştırmaları | `/api/passages/{id}/exercises/{type}` | `MULTIPLE_CHOICE` / `FILL_BLANK` / `MATCHING` / `TYPING` |
+| Bağlaçlar | `/api/conjunctions`, `/api/conjunctions/{id}/exercises/{type}`, `/api/conjunctions/category-quiz` | |
+| Modallar | `/api/modals`, `/api/modals/category-quiz`, `/api/modals/translation-quiz` | |
+| Quiz setleri | `/api/quizzes` | Bağımsız sınav setleri |
+| İlerleme | `/api/progress/me` | Kelime/soru istatistikleri |
+| Chat | `/api/chat` | Yapay zekâ dilbilgisi asistanı (kimlik doğrulama gerektirir) |
 
-### Auth — `/api/auth`
-
-| Method | Path | Rol | Açıklama |
-|---|---|---|---|
-| POST | `/api/auth/logIn` | herkes | `LogInRequest{email, password}` |
-| POST | `/api/auth/signIn` | herkes (public) | Yeni kullanıcı kaydı — `SignInRequest{email, firstName, lastName, password, role, institutionId}` |
-| PUT | `/api/auth/update` | ADMIN | `UpdateUserRequest` |
-| DELETE | `/api/auth/delete?id=` | ADMIN | Soft delete |
-| GET | `/api/auth/users` | ADMIN | Kullanıcı listesi |
-| PUT | `/api/auth/change-password` | herkes | Kendi parolasını değiştirir |
-| POST | `/api/auth/refresh`, `/api/auth/logout` | herkes | Refresh cookie ile token yenileme/çıkış |
-
-### Events — `/api/events`
-
-- `GET /`, `GET /{id}` — herkese açık (public etkinlikler + kullanıcının kurumuna özel etkinlikler).
-- `POST /`, `PUT /{id}`, `DELETE /{id}` — kimlik doğrulaması gerektirir; sadece sahip/ADMIN düzenleyebilir.
-- `POST /{id}/submit-for-review` — DRAFT → PENDING_REVIEW.
-
-### Admin Event Review — `/api/admin/events` (ADMIN)
-
-- `GET /pending`, `POST /{id}/approve`, `POST /{id}/reject` (`{rejectionReason}`).
-
-### Registrations — `/api/registrations` + `/api/events/{id}/register`
-
-- Kayıt oluşturma, iptal, kendi kayıtlarını listeleme (`qrToken` her kayıtta üretilir).
-
-### Check-in — `/api/checkins`
-
-- `POST /scan` `{qrToken}` — organizer/staff tarafından QR tarandığında çağrılır.
-
-### Certificates — `/api/certificates` + `/api/verify/{code}`
-
-- Kendi sertifikalarını listeleme, PDF indirme.
-- `GET /api/verify/{code}` — **public**, sertifikanın geçerliliğini herkese doğrular.
-
-### Institutions / Categories — `/api/institutions`, `/api/categories`
-
-- `GET /` herkese açık, CRUD ADMIN'e özel.
-
-### Audit — `/api/audit` (ADMIN)
-
-`GET /api/audit/logs` — kullanıcı/etkinlik/kurum üzerindeki değişikliklerin denetim kaydı.
-
-## Etkinlik Akışı
-
-1. Kullanıcı etkinlik oluşturur (`DRAFT`) → `submit-for-review` ile `PENDING_REVIEW`'a geçer.
-2. ADMIN onaylar (`PUBLISHED`) veya reddeder (`REJECTED`, sebep ile).
-3. Katılımcılar `PUBLISHED` etkinliğe kayıt olur, her kayıt için benzersiz bir `qrToken` üretilir.
-4. Etkinlik günü, organizer katılımcının QR'ını `POST /api/checkins/scan` ile tarar; kayıt `CHECKED_IN`'e geçer.
-5. Etkinlik `COMPLETED` olduğunda ve `certificateEnabled=true` ise, check-in yapmış katılımcılar için sertifika (benzersiz doğrulama kodu + PDF) üretilebilir; herkes `GET /api/verify/{code}` ile doğrulayabilir.
+Tüm uçların tam listesi için backend ayaktayken `/swagger-ui.html`.

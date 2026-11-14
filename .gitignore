@@ -14,10 +14,13 @@ app-logs/
 certificates/
 src/main/resources/application-local.yaml
 
-### Çalıştırma log/dump dosyaları ###
+### Çalıştırma log dosyaları ###
 *.log
 hs_err_pid*.log
-db-backups/
+
+### DB yedeği -- gerçek kullanıcı verisi (hash'li şifreler dahil) içerir,
+### public repoya asla gitmemeli. Elden/private kanaldan taşınır. ###
+db-backup/
 
 ### STS ###
 .apt_generated
