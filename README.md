@@ -88,7 +88,7 @@ Gereken anahtarlar:
 | Değişken | Amaç |
 |---|---|
 | `GROQ_API_KEY` | `/api/chat` yapay zekâ asistanı için Groq (OpenAI-uyumlu) API anahtarı |
-| `JWT_SECRET` | JWT imzalama anahtarı (en az 32 byte); verilmezse geliştirme varsayılanı kullanılır |
+| `JWT_SECRET` | JWT imzalama anahtarı, en az 32 byte rastgele değer (`openssl rand -base64 48` ile üretilir). [setup.sh](scripts/setup.sh) boşsa otomatik üretir; `application.yaml`'daki `change-this-...` değeri yalnızca hiçbir yerden anahtar verilmediğinde devreye giren, üretimde **kullanılmaması gereken** bir geliştirme varsayılanıdır. |
 
 ## Veritabanı Yedeği
 

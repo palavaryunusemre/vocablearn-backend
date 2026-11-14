@@ -34,6 +34,7 @@ die() { printf '\n\033[1;31mHATA: %s\033[0m\n' "$1" >&2; exit 1; }
 
 command -v git >/dev/null 2>&1 || die "git bulunamadı. Önce git kurun."
 command -v docker >/dev/null 2>&1 || die "docker bulunamadı. Önce Docker kurun."
+command -v openssl >/dev/null 2>&1 || die "openssl bulunamadı (JWT_SECRET üretimi için gerekli)."
 docker compose version >/dev/null 2>&1 || die "'docker compose' (v2 plugin) bulunamadı."
 
 log "Kurulum klasörü: $INSTALL_DIR"
@@ -61,6 +62,16 @@ cd backend
 if [ ! -f .env ]; then
   log ".env dosyası oluşturuluyor (.env.example'dan)"
   cp .env.example .env
+fi
+
+if ! grep -q '^JWT_SECRET=.\+' .env; then
+  log "JWT_SECRET boş -- rastgele, gerçek bir secret üretiliyor"
+  NEW_JWT_SECRET="$(openssl rand -base64 48)"
+  if grep -q '^JWT_SECRET=' .env; then
+    sed -i.bak "s|^JWT_SECRET=.*|JWT_SECRET=$NEW_JWT_SECRET|" .env && rm -f .env.bak
+  else
+    echo "JWT_SECRET=$NEW_JWT_SECRET" >> .env
+  fi
 fi
 
 if [ -n "$GROQ_KEY_ARG" ]; then
